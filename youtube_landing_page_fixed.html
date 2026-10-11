@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Watch Video</title>
+<style>
+html,body{margin:0;min-height:100%;font-family:Arial,sans-serif;background:#fff;color:#111}
+body{display:flex;justify-content:center}
+.wrap{width:min(1100px,94%);padding:35px 0 45px;text-align:center}
+h1{font-size:clamp(24px,4vw,42px);margin:0 0 24px}
+.player{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.15)}
+.player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+p{color:#666;font-size:14px;margin:16px 0 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Watch the Video</h1>
+  <div class="player">
+    <iframe
+      src="https://www.youtube.com/embed/xLkqRhtDIeo?autoplay=1&mute=1&playsinline=1&rel=0"
+      title="YouTube video"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
+  <p>The video starts muted automatically. Use the YouTube controls to turn on sound.</p>
+</div>
+</body>
+</html>
